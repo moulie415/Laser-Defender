@@ -7,6 +7,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileLifetime = 5f;
+    [SerializeField] float firingRate = 0.2f;
 
     public bool isFiring;
 
@@ -38,7 +39,13 @@ public class Shooter : MonoBehaviour
     {
         while(true)
         {
-            Instantiate(projectilePrefab);
+            GameObject obj = Instantiate(
+                projectilePrefab,
+                transform.position,
+                Quaternion.identity);
+            Destroy(obj, projectileLifetime);
+            yield return new WaitForSeconds(firingRate);
+
         }
     }
 }
