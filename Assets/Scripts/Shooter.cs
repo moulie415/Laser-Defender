@@ -26,12 +26,13 @@ public class Shooter : MonoBehaviour
 
     void Fire()
     {
-        if (isFiring)
+        if (isFiring && firingCoroutine == null)
         {
            firingCoroutine = StartCoroutine(FireContinuously());
-        } else
+        } else if (!isFiring && firingCoroutine != null)
         {
             StopCoroutine(firingCoroutine);
+            firingCoroutine = null;
         }
     }
 
@@ -43,6 +44,11 @@ public class Shooter : MonoBehaviour
                 projectilePrefab,
                 transform.position,
                 Quaternion.identity);
+            Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.velocity = transform.up * projectileSpeed;
+            }
             Destroy(obj, projectileLifetime);
             yield return new WaitForSeconds(firingRate);
 
