@@ -59,4 +59,9 @@ public class Health : MonoBehaviour
             cameraShake.Play();
         }
     }
+
+    public float GetHealth()
+    {
+        return health;
+    }
 }
