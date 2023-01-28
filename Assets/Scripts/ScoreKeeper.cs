@@ -15,6 +15,8 @@ public class ScoreKeeper : MonoBehaviour
     public void ModifyScore(float amount)
     {
         score += amount;
+        Mathf.Clamp(score, 0, int.MaxValue);
+        Debug.Log(score);
     }
 
     public void ResetScore()
