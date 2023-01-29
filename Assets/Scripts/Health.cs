@@ -54,7 +54,7 @@ public class Health : MonoBehaviour
     {
         if (!isPlayer && scoreKeeper != null)
         {
-            scoreKeeper.ModifyScore(10);
+            scoreKeeper.ModifyScore(50);
         }
         Destroy(gameObject);
     }

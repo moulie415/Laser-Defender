@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 733564384}
   - component: {fileID: 733564383}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,6 +946,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909418962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2693480725772285791, guid: 85ed674d2c4f4d4448c78f92bb15c34d, type: 3}
+  m_PrefabInstance: {fileID: 7782158204221461213}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315b5b372bac99c4ebe67604c9af62d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1225254981
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +969,7 @@ GameObject:
   - component: {fileID: 1225254984}
   - component: {fileID: 1225254983}
   - component: {fileID: 1225254982}
+  - component: {fileID: 1225254986}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1047,6 +1059,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1225254986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225254981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40df611d1a183443bbd41ae0088a12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 787792430}
+  playerHealth: {fileID: 909418962}
+  scoreText: {fileID: 733564383}
 --- !u!1 &1459666718
 GameObject:
   m_ObjectHideFlags: 0
