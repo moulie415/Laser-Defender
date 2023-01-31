@@ -17,12 +17,15 @@ public class Health : MonoBehaviour
 
     ScoreKeeper scoreKeeper;
 
+    LevelManager levelManager;
+
 
     private void Awake()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        levelManager = FindObjectOfType<LevelManager>();
     }
 
 
@@ -55,6 +58,10 @@ public class Health : MonoBehaviour
         if (!isPlayer && scoreKeeper != null)
         {
             scoreKeeper.ModifyScore(50);
+        }
+        else
+        {
+            levelManager.LoadGameOver();
         }
         Destroy(gameObject);
     }

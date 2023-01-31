@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &75979400 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6313469089058462012, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+  m_PrefabInstance: {fileID: 922609396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ea2c44f9cc76641b9de279d4f7747b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &117738841
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,8 +272,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.29411766}
-    m_HighlightedColor: {r: 1, g: 0.49349722, b: 0, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.50980395, g: 0.20784314, b: 0.7254902, a: 1}
+    m_PressedColor: {r: 0, g: 0.80784315, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -282,7 +293,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 206273850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75979400}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &206273850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,6 +833,120 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706359306}
   m_CullTransparentMesh: 1
+--- !u!1001 &922609396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811840852972680818, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2640400113905442631, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1e65ee588d35cc479f06ef54baf8a83, type: 3}
+--- !u!1001 &1196649625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2594824548131799365, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_Name
+      value: ScoreKeeper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.12062819
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42732728
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05983875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594824548131799371, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7352cb06f45a5bd44901a04bb47f5cf8, type: 3}
 --- !u!1001 &1549925134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -820,10 +957,6 @@ PrefabInstance:
     - target: {fileID: 1005401017060488972, guid: 0cd099dc7c86f3c49b50573059b2c311, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005401017060488972, guid: 0cd099dc7c86f3c49b50573059b2c311, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1005401017060488974, guid: 0cd099dc7c86f3c49b50573059b2c311, type: 3}
       propertyPath: m_RootOrder
@@ -1068,7 +1201,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0.29411766}
-    m_HighlightedColor: {r: 0.6476979, g: 0, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.50919855, g: 0.20901564, b: 0.7264151, a: 1}
     m_PressedColor: {r: 0, g: 0.8065429, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1089,7 +1222,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1693452955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75979400}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1693452955
 MonoBehaviour:
   m_ObjectHideFlags: 0
